@@ -1,0 +1,469 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imghero {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/hero-projeto02.jpg.webp");
+    background-size: cover;
+    filter: saturate(1);
+    background-position: top;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 300px;
+    height: 150px;
+}
+
+nav ul{    
+    display: flex;
+    list-style-type: none;
+    align-items: center; 
+}
+
+nav li a {
+    padding: 0px 20px;
+    color: lightgray;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    font-size: 30px;
+}
+
+.menu-mobile, .menu-content {
+    display: none;
+}
+
+.menu-mobile:hover .menu-content {
+    display: flex;
+}
+
+.menu-mobile:hover  img{
+    visibility: hidden;
+}
+
+.txthero {
+    width: 50%;
+    margin: 100px 40% 0px;
+    padding-bottom: 20%;        
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+}
+
+.txthero h1, .txts2 h1, .txts3 h1, .txts5 h1{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.sessao2 {
+    width: 100%;
+    background-color: #472562;
+    background-image: linear-gradient(to right, #472562 , darkviolet);
+    color: white;
+    padding: 5% 10% 0px;
+    display: flex;
+}
+
+.txts2 {
+    line-height: 32px;
+    margin-top: 200px;
+    width: 57%;    
+}
+
+.txts2 li, .txts2  p{
+    list-style-position: inside;
+    transition: 0.1s;
+    letter-spacing: 0.1em;
+}
+
+.txts2 li:hover{
+    font-size: 20px;
+}
+
+.txts2 a{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: darkviolet;
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.txts2 a:hover, input[type=submit]:hover{
+    background-color: white;
+    color: darkviolet;
+    border: 2px solid darkviolet;
+}
+
+.imgs2 {
+    width: 1200px;
+    height: 540px;
+    background-image: url("../imagens/device.png");
+    background-size: 710px 609px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: -180px;
+    z-index: 2;
+}
+
+.txts3 {
+    text-align: center;
+    padding: 30px 15%;
+}
+
+.txts3 h1{
+    color: #472562;
+}
+
+.txts3 p{
+    font-size: 20px;
+}
+
+.imgs3 {
+    display:flex;
+    justify-content: center;
+    margin-bottom: -50px;
+}
+
+.imgs3 img{
+    filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 90%));
+}
+
+.container {
+    position: relative;
+  }
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img{    
+    width: 500px;
+    height: auto;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row div {
+    width: 10%;
+    margin: 20px;
+}
+
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.sessao4 {
+    display: flex;    
+}
+
+.txts4left {
+    width: 50%;
+    background-color: #472562;
+    background-image: linear-gradient(to right, #472562 , #6d129a);
+    color: white;
+    padding: 100px 100px 50px;
+    z-index: -1;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+}
+
+.txts4left h2{
+    padding-bottom: 10px;
+}
+
+.txts4right {
+    width: 50%;
+    padding: 50px 100px 20px;
+}
+
+.perfils4 {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #653480;
+    margin-bottom: 20px;
+}
+
+.imgs4 img{
+    background-color: #653480;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.sessao5 {
+    background-color: #472562;
+    background-image: linear-gradient(to right, #472562 , darkviolet);
+}
+
+.txts5 {
+    width: 750px;
+    margin: auto;
+    padding: 40px 0px;
+    color: white;
+    line-height: 35px;
+}
+
+form {
+    margin: auto;
+    width: 750px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessao5 input[type=text],
+.sessao5 input[type=email]{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+.sessao5 input[type=text]:focus, .sessao5 textarea:focus, .sessao5 input[type=email]:focus{
+    border-color:#6d129a;
+}
+
+.sessao5 textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+    border: 3px solid white;
+}
+
+input[type=submit] {/*O hover desses atributo esta junto ao txts2*/
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    background-color: darkviolet;
+    padding: 15px 0px;
+    font-size: 25px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+footer {
+    padding: 40px;
+    background-color: #202020;
+    color:white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .imgs2 {
+        background-size: 610px 610px;
+    } 
+}
+
+@media screen  and (max-width: 1000px) {
+    .imgs2 {
+        background: none;
+        margin-top: 0px;
+        height: 100%;
+    }
+
+    .txts2 {
+        width: 100%;
+        margin: 20px auto;
+        padding-bottom: 40px;
+    }
+    
+    .imgs3 img{
+        width: 80vw;
+        height: auto;
+    }
+    
+    .perfils4 {
+        flex-direction: column-reverse;
+    }
+    
+    .txts4left, .txts4right {
+        padding: 100px 7vw;
+    }
+
+    .row div {
+        width: 16%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    nav {
+        flex-direction: column;
+        align-items:center;
+        padding: 60px 20px;
+    }
+
+    nav ul{
+        padding-top: 20px;
+    }
+
+    .txthero {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .sessao4 {
+        flex-direction: column;
+    }
+
+    .txts4left, .txts4right {
+        width: 100%;
+    }
+
+    .perfils4 {
+        flex-direction: row;
+    }
+
+    form, .txts5 {
+        width: 80vw;
+    }
+    
+    .imghero {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-content {
+        width: 100vw;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: #472562;
+    }
+
+    .menu-content li {
+        padding: 10px;
+    }
+
+    .menu-content li a{
+        width: 100vw;
+        margin: auto;
+    }
+
+    .txthero h1, .txts2 h1, .txts3 h1, .txts5 h1{
+        font-size: 30px;
+    }
+
+    .perfils4 {
+        flex-direction: column-reverse;
+    }
+
+    #mySlidesimg{
+        width: 90vw;
+    }
+
+}
